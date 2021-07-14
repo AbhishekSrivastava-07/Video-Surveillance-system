@@ -25,3 +25,5 @@
   segment containing only normal events in a fixed view. Despite the model’s ability to detect abnormal events and its robustness to noise, depending on 
   the activity complexity in the scene, it may produce more false alarms compared to other methods.
   
+<c>![image](https://user-images.githubusercontent.com/70462853/125668521-51f27703-153f-426a-94dc-f21ed8554c5c.png)</c>
+
