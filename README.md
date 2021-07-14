@@ -67,64 +67,68 @@ TensorFlow is a free and open-source software library for machine learning. It c
 
 ### Few processing output:
 1. frame reading after extrtaction 
+
 ![image](https://user-images.githubusercontent.com/70462853/125675241-05d086ed-cc07-484d-a13b-e5cd8e1dbbe4.png)
 
 2. Data processing
+
 ![image](https://user-images.githubusercontent.com/70462853/125675303-6cebb1b2-9414-471b-aae8-3ffa503a0ad1.png)
 
 3. CNN model/architecture
+
 ![image](https://user-images.githubusercontent.com/70462853/125675375-5886e814-cff9-474f-ae65-d82f11eab597.png)
 
 4. Training
+
 ![image](https://user-images.githubusercontent.com/70462853/125675410-4cded11c-aca6-4b18-851f-19ad793189df.png)
 
 5. Output
+
 ![image](https://user-images.githubusercontent.com/70462853/125675461-de7e281a-7585-45eb-8ad0-d4e1182a4c0e.png)
 
 ### Result analysis:
-Result Analysis:
 
 1.)	Input frames are resized to 227x227x10 so that all input images are of same size leading to better training
 
 2.)	Our CNN model consists of 1 input layer. 7 hidden layer, 1 Output layer
 
-1st hidden layer (conv3D): No of training parameter=15616 with dimensions (55, 55, 10, 128)
+  1st hidden layer (conv3D): No of training parameter=15616 with dimensions (55, 55, 10, 128)
 
-2nd hidden layer(conv3D): No of trainable parameter=204864 with dimensions (26, 26, 10, 64)
+  2nd hidden layer(conv3D): No of trainable parameter=204864 with dimensions (26, 26, 10, 64)
 
-3rd hidden layer(convLSTM2D): No of trainable parameter=296168 with dimensions (26, 26, 10, 64)
+  3rd hidden layer(convLSTM2D): No of trainable parameter=296168 with dimensions (26, 26, 10, 64)
 
-4th hidden layer(convLSTM2D): No of trainable parameter=110720 with dimensions (26, 26, 10, 32)
+  4th hidden layer(convLSTM2D): No of trainable parameter=110720 with dimensions (26, 26, 10, 32)
 
-5th hidden layer(convLSTM2D): No of trainable parameter=221440 with dimensions (26, 26, 10, 64)
+  5th hidden layer(convLSTM2D): No of trainable parameter=221440 with dimensions (26, 26, 10, 64)
 
-6th hidden layer(conv3DTran): No of trainable parameter=204928 with dimensions (55, 55, 10, 128)
+  6th hidden layer(conv3DTran): No of trainable parameter=204928 with dimensions (55, 55, 10, 128)
 
-7th hidden layer(conv3DTr): No of trainable parameter=15489 with dimensions (227, 227, 10, 1)
+  7th hidden layer(conv3DTr): No of trainable parameter=15489 with dimensions (227, 227, 10, 1)
 
-Total trainable parameter = 1068225 and non-trainable parameter = 0
+  Total trainable parameter = 1068225 and non-trainable parameter = 0
 
 3.)	Training on fps=1 (i.e. total frame=613); 
-Loss decreased from 0.0888 to 0.0697
+  Loss decreased from 0.0888 to 0.0697
 
-Accuracy increased on 52.06% to 54.26%
+  Accuracy increased on 52.06% to 54.26%
 
-Reconstruction loss for proper detection>0.0003
+  Reconstruction loss for proper detection>0.0003
 
-Training on fps=5 (i.e. = 15251); 
+  Training on fps=5 (i.e. = 15251); 
 
-loss decreased from 0.0888 to 0.0212
+  loss decreased from 0.0888 to 0.0212
 
-Accuracy increased from 66.23% to 77.99%   
+  Accuracy increased from 66.23% to 77.99%   
 
-val_loss decreased from 0.0920 to 0.0476
+  val_loss decreased from 0.0920 to 0.0476
 
-val_acc increased from 71.77% to 76.10%		
+  val_acc increased from 71.77% to 76.10%		
 
-Reconstruction loss for proper detection>0.00042
+  Reconstruction loss for proper detection>0.00042
 
 4.)	Using early-stopping we get epoch required for proper training is 10 when monitored on “val_loss”, with accuracy= 78.01%, loss= 0.0212, val_loss= 0.476, val_acc= 76.10%
-and patience =3
+  and patience =3
 
 5.)	Model checkpoint monitored on “mse” saves best model only and replaces earlier one as better model is achieved.
 
@@ -133,16 +137,16 @@ and patience =3
 
 7.)	Time taken for data processing is 00:01:52:4682 hrs
 
-Time taken for training model =05:57:20:119 hrs
+  Time taken for training model =05:57:20:119 hrs
 8.)	Model is best achieved with
 
-Optimizer=’adam’, 
+  Optimizer=’adam’, 
 
-loss=’mse’
+  loss=’mse’
 
-Metrics=’accuracy’,
+  Metrics=’accuracy’,
 
-Activation function used = tanh
+  Activation function used = tanh
 
 ![image](https://user-images.githubusercontent.com/70462853/125676112-3b79a637-579d-4544-9f71-c77e707fde91.png)
 
