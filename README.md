@@ -54,15 +54,22 @@
 
 ### Software Requirements:
 •	Python IDE, e.g., jupyter notebook, colab
+
 •	Keras-Snippet: -
+
 This is a keras code snippet extension that provide boilerplate for different CNN algorithm and as well as for various element involved at the time of writing deep learning code from scratch. This snippet reduces the coding time
 •	TensorFlow Snippets: -
+
 TensorFlow is a free and open-source software library for machine learning. It can be used across a range of tasks but has a particular focus on training and inference of deep neural networks.
 
 ### Debugging:
+
 	Extracting frames and giving them as input would result in underfitting problem. Therefore, we need to convert them in greyscale, resize and normalize and then clip values between 0-1.
+
 	Early stopping and checkpoints are set default to save best model on min method, therefore we can try saving on mode=’min’, ‘max’ as per requirement on which monitor we are evaluating.
+
 	Training error: ‘val_loss’, ‘val_acc’, this error can be solved by defining validation_split in model.fit(). Which split training data into training and validation data for proper training and validation.
+
 	Data processing and Training time can be calculated by using start_time as datetime.now() and final time as datetime.now()-start_time
 
 ### Few processing output:
