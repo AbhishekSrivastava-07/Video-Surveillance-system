@@ -27,3 +27,14 @@
   
 <c>![image](https://user-images.githubusercontent.com/70462853/125668521-51f27703-153f-426a-94dc-f21ed8554c5c.png)</c>
 
+### Algorithm:
+1.	Import Directories
+2.	Initialize directory path variable and describe a function to process and store video frames
+3.	Extract frames from video and call store function
+4.	Feature Extraction
+5.	Create spatial autoencoder architecture
+6.	Training and testing
+7.	Detection abnormality
+8.	Visualization
+
+
