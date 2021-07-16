@@ -62,6 +62,18 @@ TensorFlow is a free and open-source software library for machine learning. It c
 
 	Data processing and Training time can be calculated by using start_time as datetime.now() and final time as datetime.now()-start_time
 
+
+### Complexities Involved:
+•	Technical:
+-	Video storage
+-	Network Utilization
+-	Computational Needs
+-	Video Verification
+•	Privacy and Security
+-	Security in VSaaS System
+-	Privacy issue arises from new analytics
+-	Privacy in crowdsourcing solutions
+
 ### Few processing output:
 1. frame reading after extrtaction 
 
