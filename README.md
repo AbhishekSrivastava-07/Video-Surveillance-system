@@ -37,16 +37,6 @@
 7.	Detection abnormality
 8.	Visualization
 
-### Complexities Involved:
-•	Technical:
--	Video storage
--	Network Utilization
--	Computational Needs
--	Video Verification
-•	Privacy and Security
--	Security in VSaaS System
--	Privacy issue arises from new analytics
--	Privacy in crowdsourcing solutions
 
 ### Block Diagram
 ![image](https://user-images.githubusercontent.com/70462853/125673456-870f0df2-90b1-4f4a-8d87-5101a4537e5c.png)
