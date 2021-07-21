@@ -189,4 +189,9 @@ We formulate anomaly detection as a spatiotemporal sequence outlier detection pr
 
 [11]	G. F. Shidik, E. Noersasongko, A. Nugraha, P. N. Andono, J. Jumanto and E. J. Kusuma, "A Systematic Review of Intelligence Video Surveillance: Trends, Techniques, Frameworks, and Datasets," in IEEE Access, vol. 7, pp. 170457-170473, 2019, doi: 10.1109/ACCESS.2019.2955387.
 
+### Dataset
+
+CUHK Avenue
+
+This dataset contains 16 training and 21 testing video clips. The video contains 30652 frames in total. The training videos contain video with normal situations. The testing videos contain videos with both standard and abnormal events
 
